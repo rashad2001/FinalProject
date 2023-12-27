@@ -28,15 +28,15 @@ public class Main{
 
 // Here we test login functionality for user
     @Test(priority = 1 )
-    public void CustomerLogin() {
-      customerLogin();
+    public void customerLogin() {
+      customerLogIn();
     }
 
 
 // here we check if transaction button works fine or not
     @Test(priority = 2)
-    public void executeTransactions() {
-        customerLogin();
+    public void Transactions() {
+        customerLogIn();
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -55,8 +55,8 @@ public class Main{
     }
  // Here we check deposit button
     @Test(priority = 3)
-    public void Deposit() {
-        customerLogin();
+    public void deposit() {
+        customerLogIn();
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -84,8 +84,8 @@ public class Main{
 
     //Here we check withdrawal button
     @Test(priority = 4)
-    public void WithDrawal() {
-        customerLogin();
+    public void withDrawal() {
+        customerLogIn();
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
@@ -113,14 +113,14 @@ public class Main{
 
     //Here we check login functonality for bank manager
     @Test(priority = 5)
-    public void Bank_Manager_login() {
+    public void bankManagerLogIn() {
         bankManagerLogin();
     }
 
 
     //Here add customer done by bank manager
     @Test(priority = 6)
-    public void Add_Customer()  {
+    public void addCustomer()  {
 
         bankManagerLogin();
         // Setting up an implicit wait of 10 seconds
@@ -200,7 +200,7 @@ public class Main{
 
     //Here we see list of customers
     @Test(priority = 8)
-    public void clickCustomers() {
+    public void showCustomers() {
         bankManagerLogin();
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -236,7 +236,7 @@ public class Main{
     }
 
     //this method is a template i have used in all tests required logging in as a customer
-    public  void customerLogin(){
+    public  void customerLogIn(){
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
