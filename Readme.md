@@ -2,33 +2,32 @@
 
 This repository contains a set of manual and automation test cases for a banking application. The tests cover various functionalities, including user authentication, transactions, customer management, and more. Both manual and automated test cases have been included to ensure comprehensive coverage.
 
-## Manual Test Cases
+## Test Cases
 
 ### Login Functionality
 
 - **Test Case 1: Verify Successful Login**
   - Objective: Ensure users can successfully log in with valid credentials.
-  - ...
+
 
 - **Test Case 2: Verify Customer Selection**
   - Objective: Confirm that users can select their customer name during login.
-  - ...
 
-...
+  - **Test Case 3: Verify Deposit Functionality**
+ 
+  - **Test Case 4: Verify Withdrawal Functionality**
+ 
+  - **Test Case 5: Verify Authentication for Bank Manager Login**
+ 
+  - **Test Case 6: Verify Validation on Add Customer Fields**
+    
+  - **Test Case 7: Verify Opening an Account**
+ 
+  - **Test Case 8: Verify Customer Search Functionality**
+ 
+  - **Test Case 9: Verify Customer Deletion**
 
-### Automated Test Cases
 
-Automated test cases have been developed to streamline testing processes. The following test cases are included in the automation suite:
-
-- **Automated Test Case 1: Login with Valid Credentials**
-  - Objective: To automate the verification of successful login with valid credentials.
-  - ...
-
-- **Automated Test Case 2: Transaction Functionality**
-  - Objective: Automate the verification of transaction processes.
-  - ...
-
-...
 
 ## User Stories
 
