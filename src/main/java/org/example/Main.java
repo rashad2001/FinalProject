@@ -21,20 +21,19 @@ public class Main{
     public WebDriver driver ;
     @BeforeClass
     public void setUp() {
-        System.out.println("Launching firefox browser");
         System.setProperty("webdriver.gecko.driver", "C:\\Users\\Rashad\\IdeaProjects\\untitled5\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
     }
 
-
-    @Test(priority = 1)
+// Here we test login functionality for user
+    @Test(priority = 1 )
     public void CustomerLogin() {
       customerLogin();
     }
 
 
-
+// here we check if transaction button works fine or not
     @Test(priority = 2)
     public void executeTransactions() {
         customerLogin();
@@ -52,9 +51,9 @@ public class Main{
         // Click the button
         button.click();
 
-        // Rest of your code
-    }
 
+    }
+ // Here we check deposit button
     @Test(priority = 3)
     public void Deposit() {
         customerLogin();
@@ -82,8 +81,10 @@ public class Main{
         depositSubmitButtonElement.click();
 
     }
+
+    //Here we check withdrawal button
     @Test(priority = 4)
-    public void WithDrawl() {
+    public void WithDrawal() {
         customerLogin();
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -110,11 +111,14 @@ public class Main{
 
     }
 
+    //Here we check login functonality for bank manager
     @Test(priority = 5)
     public void Bank_Manager_login() {
         bankManagerLogin();
     }
 
+
+    //Here add customer done by bank manager
     @Test(priority = 6)
     public void Add_Customer()  {
 
@@ -154,6 +158,7 @@ public class Main{
 
 
     }
+    //Here we check whether manager is able to open account or not
     @Test(priority = 7)
     public void openAccount() {
         bankManagerLogin();
@@ -193,6 +198,7 @@ public class Main{
         submitButtonElement.click();
     }
 
+    //Here we see list of customers
     @Test(priority = 8)
     public void clickCustomers() {
         bankManagerLogin();
@@ -215,6 +221,7 @@ public class Main{
 
     }
 
+    //this method is a template i have used in all tests required logging in as a manager
     public void bankManagerLogin(){
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -228,6 +235,7 @@ public class Main{
         bankManagerLoginButtonElement.click();
     }
 
+    //this method is a template i have used in all tests required logging in as a customer
     public  void customerLogin(){
         // Setting up an implicit wait of 10 seconds
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -261,6 +269,6 @@ public class Main{
 
     @AfterClass
     public void tearDown(){
-        driver.close();
+        driver.quit();
     }
 }
