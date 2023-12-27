@@ -29,6 +29,73 @@ This repository contains a set of manual and automation test cases for a banking
 
 
 
+## Performance testing
+
+Performance Testing Report
+Overview
+
+This repository contains the results of a comprehensive performance testing initiative conducted on our application using JMeter. The goal was to assess the robustness and scalability under different user load scenarios.
+Test Scenarios
+500 Users
+
+    Home Page Request:
+        Some users experienced errors due to scalability challenges.
+        Optimizations initiated to improve performance.
+    Transactions and Bank Manager Login:
+        Generally stable performance observed.
+    Generic Login:
+        Connectivity issues addressed to mitigate errors.
+
+5,000 Users
+
+    Home Page Request:
+        Continued scalability issues addressed with optimizations.
+    Transactions Request:
+        Errors identified, optimizations implemented for enhanced database performance.
+    Bank Manager Login and Generic Login:
+        Authentication and authorization optimizations applied to improve performance.
+
+Common Observations
+
+    Network Issues:
+        Connectivity challenges resolved to improve reliability.
+    Server Unavailability:
+        Monitored and addressed intermittent server unresponsiveness.
+
+Recommendations
+
+    Optimization Measures:
+        Continued optimization efforts for the home page and overall system performance.
+    Monitoring:
+        Implement robust server and network monitoring solutions.
+    Scalability Testing:
+        Consider additional scalability testing for comprehensive performance evaluation.
+
+Errors and Screenshots
+
+Include screenshots or pictures depicting errors encountered during the tests:
+Home Page Request (500 Users)
+
+![image](https://github.com/rashad2001/FinalProject/assets/60662650/1588551f-e519-4ba6-adfe-9f16fc1fdf5c)
+
+Transactions Request (5,000 Users)
+
+![image](https://github.com/rashad2001/FinalProject/assets/60662650/d319e5bf-5726-4547-a07a-abf3edba862d)
+
+Bank Manager Login (5,000 Users)
+
+![image](https://github.com/rashad2001/FinalProject/assets/60662650/e6079dee-6bb5-4093-ba1e-3cf4baa6847f)
+
+Add Customer (5,000 Users)
+
+![image](https://github.com/rashad2001/FinalProject/assets/60662650/0d35f515-d1a8-4be9-bdfd-3b6a025857c6)
+
+Conclusion
+
+The performance testing initiative provided valuable insights, leading to targeted optimizations and enhancements. Ongoing monitoring and optimization efforts are crucial for ensuring optimal performance under varying conditions.
+
+For more details, refer to the detailed Performance Testing Report.
+
 ## User Stories
 
 A set of user stories has been created to outline the requirements and expectations from the banking application:
@@ -86,8 +153,5 @@ A set of user stories has been created to outline the requirements and expectati
 ## Reporting Issues
 
 If you encounter any issues or have suggestions for improvements, please feel free to [open an issue](link-to-issue-tracker) on this repository.
-![image](https://github.com/rashad2001/FinalProject/assets/60662650/5c75cf16-f2ee-4fab-a305-74081d935ee2)
 
----
 
-Feel free to customize and expand this README.md template based on your specific tools, frameworks, and repository structure. The goal is to provide clear documentation for anyone using or contributing to your testing project.
