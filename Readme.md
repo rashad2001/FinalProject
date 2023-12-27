@@ -86,6 +86,7 @@ A set of user stories has been created to outline the requirements and expectati
 ## Reporting Issues
 
 If you encounter any issues or have suggestions for improvements, please feel free to [open an issue](link-to-issue-tracker) on this repository.
+![image](https://github.com/rashad2001/FinalProject/assets/60662650/5c75cf16-f2ee-4fab-a305-74081d935ee2)
 
 ---
 
